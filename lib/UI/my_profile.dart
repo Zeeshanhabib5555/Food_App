@@ -16,47 +16,47 @@ class _MyProfileState extends State<MyProfile> {
       child: Scaffold(
         backgroundColor: Colors.black,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 100),
-            Center(
-              child: Container(
-                height: 200,
-                width: 200,
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('images/food1.jpg'),
-                ),
+            const SizedBox(height: 100),
+            const Center(
+              child: CircleAvatar(
+                radius: 100,
+                backgroundImage: AssetImage('images/shaniupdate.png'),
               ),
+
             ),
-            SizedBox(height: 40),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Zeeshan Habib',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
-            Divider(thickness: 5),
-            SizedBox(height: 20),
-            Text(
+            const Divider(thickness: 5),
+            const SizedBox(height: 20),
+            const Text(
               'zeeshanhabib5555@gmail.com',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
-            Divider(thickness: 5),
-            SizedBox(height: 20),
-            Text(
+            const Divider(thickness: 5),
+            const SizedBox(height: 20),
+            const Text(
               '03151576520',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
-            Divider(thickness: 5),
-            SizedBox(height: 20),
-            Text(
+            const Divider(thickness: 5),
+            const SizedBox(height: 20),
+            const Text(
               'Islamabad',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
-            Divider(thickness: 5),
-            SizedBox(height: 20),
-            Text(
+            const Divider(thickness: 5),
+            const SizedBox(height: 20),
+            const Text(
               '50+ Orders',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 20),
             Container(
               height: 50,
               width: 150,
@@ -73,37 +73,37 @@ class _MyProfileState extends State<MyProfile> {
               ),
               child: TextButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                 },
-                child: Text('Logout', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                child: const Text('Logout', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                   },
-                  child: Icon(Icons.home, color: Colors.white),
+                  child: const Icon(Icons.home, color: Colors.white),
                 ),
-                SizedBox(width: 70),
+                const SizedBox(width: 70),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => FavOrders()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const FavOrders()));
                   },
-                  child: Icon(Icons.favorite, color: Colors.white),
+                  child: const Icon(Icons.favorite, color: Colors.white),
                 ),
-                SizedBox(width: 70),
-                Icon(Icons.shopping_cart, color: Colors.white),
-                SizedBox(width: 70),
+                const SizedBox(width: 70),
+                const Icon(Icons.shopping_cart, color: Colors.white),
+                const SizedBox(width: 70),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => MyProfile()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const MyProfile()));
                   },
-                  child: Icon(Icons.account_box, color: Color(0xFFFF6F00)),
+                  child: const Icon(Icons.account_box, color: Color(0xFFFF6F00)),
                 ),
               ],
             ),

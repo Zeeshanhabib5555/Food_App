@@ -40,12 +40,14 @@ class _DetailScreenState extends State<DetailScreen> {
         body: Column(
           children: [
             Container(
-              height: 350,
-              width: 450,
+              height: 280,
+              width: 400,
               decoration: const BoxDecoration(
                   // color: Colors.orangeAccent
                   ),
               child:  Image(
+                // height: 100,
+                // width: 200,
                 image: AssetImage(widget.imagePath),
               ),
             ),
@@ -143,7 +145,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       textAlign: TextAlign.justify,
                     ),
                     SizedBox(
-                      height: 60,
+                      height: 10,
                     ),
                     Row(
                       // mainAxisAlignment: MainAxisAlignment.center,
